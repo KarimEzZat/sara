@@ -1,0 +1,212 @@
+/* =================================== */
+/*    Basic Style & Reset 
+/* =================================== */
+
+/* reset elements */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}z
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+::input-placeholder { color: #fff }
+
+:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: 300;
+}
+
+::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: 300;
+}
+
+:-ms-input-placeholder { color: #fff; font-weight: 300 }
+
+::-ms-input-placeholder { color: #fff; font-weight: 300 }
+
+body {
+  background: #bc535a  url(../img/shapes.png) repeat;
+  font-family: $fontbody;
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  position: relative;
+  overflow-x: hidden;
+  padding: 50px;
+}
+
+h1,h2,h3,
+h4,h5,h6 {
+  font-family: $fontheader;
+  color: $colorblack;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@for $i from 1 through 4 {
+  h#{$i}, .h#{$i} {
+    font-size: 42px - $i*6;
+  }
+}
+
+h5,.h5 { font-size: 16px }
+
+h6,.h6 { font-size: 14px }
+
+.img { max-width: 100% }
+
+.clear { clear: both }
+
+a { color: #888 }
+
+a,
+:after,
+:before,
+.transition { @include transition(0.3s) }
+
+a:focus,
+a:hover { text-decoration: none; color: #888; }
+
+ul,ol { list-style: none }
+
+section { position: relative; background: #fff; }
+
+.section-padding { padding: 70px 0 }
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+//  Template wrapper
+
+.template-wrapper {
+  position: relative;
+  border: 15px solid #000;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 80px;
+  text-align: center;
+  h2 {
+    margin-bottom: 6px;
+  }
+  span {
+    position: relative;
+    height: 5px;
+    width: 30px;
+    background: $colorredlight;
+    border-radius: 10px;
+    margin-left: calc(50% - 27px);
+    display: block;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 50%;
+      background: $colorredlight;
+      border-radius: 10px;
+      right: -60%;
+      top: 0;
+    }
+    &::before {
+      width: 50%;
+      right: -60%;
+    }
+
+    &::after {
+      width: 25%;
+      right: -100%;
+    }
+  }
+}
+
+.icon-bg {
+  position: relative;
+  background-color: $colorredlight;
+  height: 75px;
+  width: 75px;
+  border-radius: 120px 135px 110px 90px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 5px;
+    border: 2px solid $colorgreen;
+    border-radius: 130px 120px 160px 130px;
+  }
+}
+
+// watter wave animation effect
+.water-wave {
+  position: relative;
+  animation-name: water-wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  &::before {
+    animation-name: water-wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes water-wave {
+  0% { border-radius: 120px 135px 110px 90px }
+
+  25% { border-radius: 130px 140px 100px 110px }
+
+  50% { border-radius: 110px 97px 150px 100px }
+
+  75% { border-radius: 80px 107px 120px 90px }
+
+  100% { border-radius: 120px 135px 110px 90px }
+}
+
+/* Mover animation Effect */
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

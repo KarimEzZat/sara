@@ -1,0 +1,215 @@
+@media (min-width: 992px) {
+    .blog-area .row [class^="col"]:first-child,
+    .blog-area .row [class^="col"]:nth-child(2),
+    .blog-area .row [class^="col"]:nth-child(3) {
+        margin-top: 0 !important;
+    }
+    .works-area .row [class^="col"]:not(:first-child):not(:nth-child(2)) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 20px;
+    }
+    .header-area {
+        .openNav {
+            display: inline-block !important;
+        }
+    }
+    .about-area {
+        padding-bottom: 70px;
+
+        .about-pic {
+            padding-right: 0;
+            width: 70%;
+            margin: 0 auto 100px;
+        }
+    }
+    .works-area .row [class^="col"]:not(:first-child) {
+        margin-top: 30px;
+    }
+    .testimonial-area {
+        .quote-wrapper {
+            text-align: center;
+        }
+
+        .carousel-indicators {
+            justify-content: center;
+        }
+    }
+    .counter-area {
+        .worms {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .blog-area .row [class^="col"]:first-child,
+    .blog-area .row [class^="col"]:nth-child(2) {
+        margin-top: 0 !important;
+    }
+    .contact-form {
+        .name-email {
+            input {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .container {
+        max-width: 855px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .js-fullheight {
+        height: 770px !important;
+    }
+    .hero-area {
+        &::before {
+            width: 50%;
+        }
+
+        .hero-content {
+            h1 {
+                font-size: 48px;
+            }
+        }
+
+        .mouse {
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    .about-area {
+        .about-pic {
+            width: 90%;
+        }
+    }
+    .resume {
+        .border-line-v {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .blog-area .row [class^="col"]:first-child {
+        margin-top: 0 !important;
+    }
+    .contact-area {
+        .contact-form {
+            padding: 50px 10px;
+
+            .name-email {
+                display: block !important;
+            }
+
+            .input-field {
+                width: 100%;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .price_item {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 590px) {
+    body {
+        padding: 10px;
+    }
+    .about-area {
+        .about-pic {
+            margin-bottom: 40px;
+
+            .about-img {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    .hero-area {
+        .hero-content {
+            h1 {
+                font-size: 36px;
+            }
+
+            .profession {
+                font-size: 22px;
+
+                .animated-info {
+                    em {
+                        top: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 477px) {
+    .hero-area {
+        .hero-content {
+            .profession {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .mouse {
+            bottom: 30px;
+        }
+    }
+
+    .about-area {
+        .about-pic {
+            margin-bottom: 70px;
+
+            .img-caption {
+                bottom: -50px;
+                right: -33px;
+                width: 150px;
+                height: 133px;
+                padding: 10px;
+
+                &::before {
+                    border-width: 17px 31px 34px 0;
+                    top: -50px;
+                }
+
+                span {
+                    font-size: 38px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .skills-chart {
+        .skill-item {
+            .bar {
+                width: 60%
+            }
+        }
+    }
+}

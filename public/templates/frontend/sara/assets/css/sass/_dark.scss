@@ -1,0 +1,490 @@
+/* =================================== */
+/*    Dark Template
+/* =================================== */
+
+body[data-theme='dark'] {
+    background-color: #191919;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff
+    }
+
+    .modal-body {
+        background: #151515;
+    }
+
+    .modal-dialog {
+        .modal-content {
+            .close {
+                color: $colorblack;
+                background: $colorgreen;
+            }
+        }
+    }
+
+    .form-control {
+        color: #fff;
+
+        &:focus {
+            border-color: $colorgreen;
+        }
+    }
+
+    .section-title {
+        span {
+            background: $colorgreen;
+
+            &::after,
+            &::before {
+                background: $colorgreen;
+            }
+        }
+    }
+
+    .icon-bg {
+        background: rgba($colorgreen, .4);
+    }
+
+    .btn {
+        background: $colorgreen;
+        border-color: $colorgreen;
+        color: $colorblack;
+
+        &:hover {
+            background: transparent;
+        }
+
+        span {
+            color: $colorgreen;
+        }
+    }
+
+    .carousel-indicators {
+        .active {
+            background-color: $colorgreen;
+        }
+    }
+
+    .preloader-area {
+        .loader-section {
+            background: #191919;
+
+            &.section-right {
+                background: #151515;
+            }
+        }
+    }
+
+    .navbar {
+        .nav-menu {
+            li {
+                .nav-link {
+                    color: $colorblack;
+                }
+            }
+        }
+    }
+
+    .header-area {
+        .logo {
+            background: $colorgreen;
+            color: $colorblack;
+            border-color: $colorgreen;
+
+            span {
+                &:nth-child(2) {
+                    color: $colorblack;
+                }
+            }
+        }
+
+        .mobile-nav {
+            background: $colorgreen;
+
+            .mobile-menu {
+                li {
+                    i {
+                        color: $colorblack;
+                    }
+                }
+
+                span {
+                    &::before {
+                        border-left-color: $colorgreen;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-area {
+        background: #151515;
+
+        &::before {
+            background: #191919;
+        }
+
+        .hero-content {
+            .avatar {
+                img {
+                    -webkit-filter: grayscale(100%);
+                    /* Safari 6.0 - 9.0 */
+                    filter: grayscale(100%);
+                }
+                .social-links {
+                    li {
+                        a {
+                            background: $colorgreen;
+                            color: $colorblack;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mouse {
+            .mouse-icon {
+                &::after {
+                    background: #191919;
+                }
+            }
+        }
+    }
+
+    .about-area {
+        background: #151515;
+
+        .about-pic {
+            .img-caption {
+                background: $colorgreen;
+
+                &::before {
+                    border-bottom-color: $colorgreen;
+                }
+
+                span,
+                p {
+                    color: $colorblack;
+                }
+            }
+
+            .about-img {
+                img {
+                    -webkit-filter: grayscale(100%);
+                    /* Safari 6.0 - 9.0 */
+                    filter: grayscale(100%);
+                }
+
+                &::after {
+                    border-color: $colorgreen;
+                }
+            }
+        }
+
+        .about-details {
+            .subheading {
+                background: $colorgreen;
+                color: $colorblack;
+            }
+
+            .info-list {
+                ul {
+                    li {
+                        strong {
+                            color: $colorgreen;
+
+                            &::before {
+                                background: $colorgreen;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills-area {
+        background: #151515;
+
+        .skills-chart {
+            .skill-item {
+                h4 {
+                    color: $colorblack;
+                }
+
+                .bar {
+                    .item-progress {
+                        background: $colorgreen;
+                        outline-color: $colorgreen;
+
+                        &::before {
+                            background: $colorgreen;
+                        }
+
+                        .progress-value {
+                            color: $colorgreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .services-area {
+        background: #151515;
+
+        .service-item {
+            .content {
+                &::before {
+                    background: rgba($colorgreen, .35);
+                    border-color: rgba($colorgreen, .2);
+                }
+            }
+        }
+    }
+
+    .prices-area {
+        background: #191919;
+
+        .price-item {
+            background: #151515;
+
+            .pricingTable-header {
+                h4 {
+                    background: #191919;
+                }
+            }
+
+            .pricing-content {
+                ul {
+                    li {
+                        &:nth-child(odd) {
+                            background: #191919;
+                        }
+                    }
+                }
+            }
+
+            .best {
+                color: $colorblack;
+            }
+
+            .btn {
+                background: $colorgreen;
+                border-color: $colorgreen;
+
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+
+        .modal-body {
+            .content {
+                h2 {
+                    color: $colorgreen;
+                }
+            }
+        }
+    }
+
+    .resume-area {
+        background: #151515;
+
+        .resume-title {
+            .icon {
+                color: $colorgreen;
+            }
+        }
+
+        .resume-title,
+        .resume-item {
+            &::after {
+                background: #000;
+            }
+        }
+
+        .resume-items {
+            .resume-item {
+                .date {
+                    background: #000;
+                    border-color: #000;
+                }
+
+                &.active {
+                    .date {
+                        background: $colorgreen;
+                        border-color: $colorgreen;
+                        color: $colorblack;
+                    }
+                }
+
+                .company,
+                .company i {
+                    color: $colorgreen;
+                }
+            }
+        }
+
+        .resume {
+            .border-line-v {
+                &::before {
+                    background: #000;
+                }
+            }
+        }
+    }
+
+    .works-area {
+        background: #191919;
+
+        .filters-content {
+            .single-work {
+                .middle {
+                    background: rgba($colorblack, .8);
+
+                    i,
+                    .cat {
+                        color: $colorgreen;
+                    }
+
+                    h4 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .hire-area {
+        background: #191919;
+
+        .hire-content {
+            outline: 0;
+            background: #151515;
+
+            &::before {
+                border-left-color: #191919;
+            }
+        }
+    }
+
+    .counter-area {
+        background: #191919;
+
+        .counter-box {
+            .counter-content {
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .testimonial-area {
+        background: #151515;
+
+        .tabs {
+            li {
+                &.active {
+                    background: unset;
+                }
+
+                figure {
+                    &::after {
+                        border-color: $colorgreen;
+                    }
+                }
+            }
+        }
+
+        .quote-icon {
+            color: $colorgreen;
+        }
+
+        .quote-wrapper {
+            span {
+                color: $colorgreen;
+            }
+        }
+    }
+
+    .blog-area {
+        background: #191919;
+
+        .single-blog {
+            .blog-info {
+                background: $colorgreen;
+
+                a {
+                    color: $colorblack !important;
+
+                    i {
+                        color: $colorblack;
+                    }
+                }
+            }
+
+            h4 {
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $colorgreen;
+                    }
+                }
+            }
+        }
+
+        .modal-body {
+            .author {
+                color: $colorgreen;
+            }
+        }
+    }
+
+    .contact-area {
+        background: #151515;
+
+        .contact-form {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .14);
+            .img-holder {
+                img {
+                    -webkit-filter: grayscale(100%);
+                    /* Safari 6.0 - 9.0 */
+                    filter: grayscale(100%);
+                }
+            }
+
+            h3 {
+                span {
+                    color: $colorgreen;
+                }
+            }
+
+            .form-control {
+                &.error {
+                    border-color: $colorgreen;
+                }
+            }
+
+            label {
+                &.error {
+                    color: $colorgreen;
+                }
+            }
+        }
+    }
+
+    .footer-area {
+        background: #191919;
+        i {
+            color: $colorblack;
+        }
+    }
+}
